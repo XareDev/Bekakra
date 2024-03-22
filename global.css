@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'century-gothic';
+    src: url('cg.ttf') format('truetype');
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'century-gothic', sans-serif;
+    color:white;
+    text-decoration: none;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+nav {
+    width: 100%;
+    height: 22.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+nav a {
+    height: 65%; /* Adjust the height as needed */
+  }
+  
+  nav a img {
+    height: 100%;
+    vertical-align: middle;
+  }
+#navs-items {
+    height: 100%;
+    width: auto;
+    float:right;
+    margin:24px 0;
+    padding: 25px;
+}
+
+#navs-items ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+
+#navs-items ul li {
+    display: inline;
+    font-size: larger;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+#navs-items ul li a {
+    font-weight: bold;
+    color: #7B7C7E;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 20px 20px 26px;
+    transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+}
+
+#navs-items li a{
+	font-family: 'century-gothic', Fallback, sans-serif;
+    font-weight: bold;
+	color: #7B7C7E;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding:20px 20px 26px;
+	transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	-webkit-transition: 0.2s ease;
+}
+#navs-items li.active > a, #navs-items li > a:hover {
+	color: #fdda01;
+	border-top:5px solid #fdda01;
+	background:#202020;
+}
+#navs-items li > a:hover:before,#navs-items li.active > a:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid #fdda01;
+	border-bottom: 0 solid rgba(0, 0, 0, 0)!important;
+	border-right: 10px solid rgba(0, 0, 0, 0)!important;
+	border-left: 10px solid rgba(0, 0, 0, 0)!important;
+	left: 50%;
+	top: -20px;
+	margin-left: -10px;
+}
+
+#navs-items ul li:not(:last-child) {
+    margin-right: 25px;
+}
+
+#bottom-nav {
+    background-color: #fdda01;
+    height: 60%;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
