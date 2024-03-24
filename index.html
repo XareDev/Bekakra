@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bekakra Motors</title>
-    <link rel="stylesheet" href="global.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js"></script>
+
+    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css">
+
+    
+    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+
+
 </head>
 <body>
     <header>
@@ -59,8 +70,23 @@
             
         </nav>
     </header>
-    <section>
-
-    </section>
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img alt="two" src="https://zaydite.com/images/uploads/42/181/two.jpg">
+                  </li>
+                  <li class="splide__slide">
+                    <img alt="three" src="https://zaydite.com/images/uploads/42/181/three.jpg">
+                  </li>
+                  <li class="splide__slide">
+                    <img alt="" src="https://zaydite.com/images/uploads/42/181/four.jpg">
+                  </li>
+                  <li class="splide__slide">
+                    <img alt="four" src="https://zaydite.com/images/uploads/42/181/five.jpg">
+                  </li>
+              </ul>
+        </div>
+      </section>        
 </body>
 </html>

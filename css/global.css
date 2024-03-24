@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'century-gothic';
-    src: url('cg.ttf') format('truetype');
+    src: url('../fonts/cg.ttf') format('truetype');
     font-weight: 400;
 }
 
@@ -8,13 +8,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'century-gothic', sans-serif;
+    
     color:white;
     text-decoration: none;
     border:0;
     font-size:100%;
     font:inherit;
     vertical-align:baseline;
+}
+
+body {
+    font-family: 'century-gothic', sans-serif;
 }
 
 nav {
@@ -106,10 +110,5 @@ nav a {
 #bottom-nav {
     background-color: #fdda01;
     height: 60%;
-    width: 100%;
-}
-
-section {
-    height: 100vh;
     width: 100%;
 }
