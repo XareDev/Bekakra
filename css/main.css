@@ -1,4 +1,8 @@
-
+.splide__progress__bar {
+    height: 3px;
+    background: #ccc;
+  }
+  
 section {
     height: 100vh;
     width: 100%;
