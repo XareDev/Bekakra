@@ -4,6 +4,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'century-gothic';
+    src: url('../fonts/cgb.ttf') format('truetype');
+    font-weight: bold;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -64,7 +70,7 @@ nav a {
 
 #navs-items ul li a {
     font-weight: bold;
-    color: #7B7C7E;
+    color: var(--txt-clr);
     text-transform: uppercase;
     font-size: 1em;
     padding: 20px 20px 26px;
@@ -76,7 +82,7 @@ nav a {
 #navs-items li a{
 	font-family: 'century-gothic', Fallback, sans-serif;
     font-weight: bold;
-	color: #7B7C7E;
+	color: var(--txt-clr);
 	text-transform: uppercase;
 	font-size: 1em;
 	padding:20px 20px 26px;
@@ -85,8 +91,8 @@ nav a {
 	-webkit-transition: 0.2s ease;
 }
 #navs-items li.active > a, #navs-items li > a:hover {
-	color: #fdda01;
-	border-top:5px solid #fdda01;
+	color: var(--ylw-clr);
+	border-top:5px solid var(--ylw-clr);
 	background:#202020;
 }
 #navs-items li > a:hover:before,#navs-items li.active > a:before {
@@ -94,7 +100,7 @@ nav a {
 	position: absolute;
 	width: 0;
 	height: 0;
-	border: 10px solid #fdda01;
+	border: 10px solid var(--ylw-clr);
 	border-bottom: 0 solid rgba(0, 0, 0, 0)!important;
 	border-right: 10px solid rgba(0, 0, 0, 0)!important;
 	border-left: 10px solid rgba(0, 0, 0, 0)!important;
@@ -108,7 +114,12 @@ nav a {
 }
 
 #bottom-nav {
-    background-color: #fdda01;
+    background-color: var(--ylw-clr);
     height: 60%;
     width: 100%;
+}
+
+:root {
+    --ylw-clr : #fdda01;
+    --txt-clr : #7B7C7E;
 }

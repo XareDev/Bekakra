@@ -3,7 +3,26 @@
     background: #ccc;
   }
   
-section {
-    height: 100vh;
+section:not(:first-of-type) {
+    height: 50vh;
     width: 100%;
+}
+#services-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-sect > h3 {
+  color: var(--ylw-clr);
+  font-weight: bold;
+  font-size: 36px;
+  position: relative;
+}
+
+
+#services-cont {
+  width: 80%;
+  height: 60%;
 }
