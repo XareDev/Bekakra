@@ -12,17 +12,67 @@ section:not(:first-of-type) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em;
 }
 
 #services-sect > h3 {
   color: var(--ylw-clr);
   font-weight: bold;
   font-size: 36px;
-  position: relative;
+  margin-bottom: 3em;
+  margin-top: 2.5em;
 }
 
 
 #services-cont {
-  width: 80%;
-  height: 60%;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  height: 15em;
+}
+
+.services-card:not(:last-of-type) {
+  margin-left: 3.5em;
+}
+
+.service-card-img {
+  width: 6em;
+  height: 6em;
+  background: var(--ylw-clr);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.service-card-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.services-card > *:not(:last-child) {
+ margin-bottom: 1em;
+}
+
+.service-txt {
+  color: var(--txt-clr);
+  font-size: 14px;
+  text-align: center;
+}
+
+.service-header {
+  color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
 }
