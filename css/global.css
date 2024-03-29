@@ -117,9 +117,15 @@ nav a {
     background-color: var(--ylw-clr);
     height: 60%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em;
 }
 
 :root {
     --ylw-clr : #fdda01;
-    --txt-clr : #7B7C7E;
+    --txt-clr : #7e7b7c;
+    --txt-clr-sub: #eee;
+    --txt-clr-wht: #fff;
 }
