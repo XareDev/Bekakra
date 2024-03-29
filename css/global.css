@@ -4,6 +4,10 @@
     font-weight: 400;
 }
 
+ul {
+    list-style: none;
+}
+
 @font-face {
     font-family: 'century-gothic';
     src: url('../fonts/cgb.ttf') format('truetype');
@@ -16,7 +20,7 @@
     box-sizing: border-box;
     
     color:white;
-    text-decoration: none;
+    text-decoration: none !important;
     border:0;
     font-size:100%;
     font:inherit;
@@ -128,4 +132,39 @@ nav a {
     --txt-clr : #7e7b7c;
     --txt-clr-sub: #eee;
     --txt-clr-wht: #fff;
+    --bg-black : #202020;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--bg-black);
+}
+
+footer h3 {
+    font-size: 1.3em;
+    color: var(--ylw-clr);
+    border-bottom: 1px dashed rgba(126, 126, 126, 0.34);
+    font-family: 'century-gothic', Fallback, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+footer li, footer p {
+    font-size: .9em;
+    color: #ccc;
+    display: block;
+    margin: 10px 0;
+}
+
+footer .copyright {
+    color: var(--txt-clr-wht);
+    font-size: 13px;
+    text-transform: uppercase;
 }
