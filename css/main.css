@@ -1,18 +1,17 @@
 .splide__progress__bar {
-    height: 3px;
-    background: #ccc;
-  }
-  
-section:not(:first-of-type) {
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.25em;
+  height: 3px;
+  background: #ccc;
 }
 
+section:not(:first-of-type) {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25em;
+}
 section > h3 {
   color: var(--ylw-clr);
   font-weight: bold;
@@ -50,7 +49,6 @@ section > p {
   width: 20em;
   height: 15em;
 }
-
 .services-card:not(:last-of-type) {
   margin-left: 3.5em;
 }
@@ -62,14 +60,13 @@ section > p {
   padding: 1em;
   border-radius: 50%;
 }
-
 .service-card-img img {
   max-width: 100%;
   max-height: 100%;
 }
 
 .services-card > *:not(:last-child) {
- margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .service-txt {
@@ -80,16 +77,15 @@ section > p {
 
 .service-header {
   color: black;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
 }
 
 .even-sect {
   background-color: var(--ylw-clr);
 }
-
 .even-sect > h3 {
   color: var(--txt-clr-wht);
 }
@@ -104,14 +100,12 @@ section > p {
   align-items: center;
   margin: 15px;
 }
-
-#clients-cont .circle > img{
+#clients-cont .circle > img {
   max-width: 85%;
   max-height: 85%;
 }
 
-.smaller-img
-{
+.smaller-img {
   max-width: 65% !important;
   max-height: 65% !important;
 }
@@ -120,3 +114,38 @@ section > p {
   width: 50%;
   flex-wrap: wrap;
 }
+
+@media (max-width: 991.98px) {
+  #image-carousel {
+    margin-top: 2em;
+  }
+  section:not(:first-of-type) {
+    height: auto !important;
+    padding: 1.25em !important;
+  }
+  #services-cont {
+    flex-direction: column-reverse !important;
+  }
+  .services-card {
+    height: 20em !important;
+  }
+  .services-card:not(:last-of-type) {
+    margin-bottom: 3.5em;
+    margin-left: 0 !important;
+  }
+  section > h3 {
+    font-size: 18px !important;
+    text-align: center;
+  }
+  section > p {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #navs-items ul li a {
+    font-size: 0.75em;
+  }
+  section:not(:first-of-type) {
+    height: 160vh;
+  }
+}/*# sourceMappingURL=main.css.map */

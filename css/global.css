@@ -1,170 +1,262 @@
 @font-face {
-    font-family: 'century-gothic';
-    src: url('../fonts/cg.ttf') format('truetype');
-    font-weight: 400;
+  font-family: "century-gothic";
+  src: url("../fonts/cg.ttf") format("truetype");
+  font-weight: 400;
 }
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 @font-face {
-    font-family: 'century-gothic';
-    src: url('../fonts/cgb.ttf') format('truetype');
-    font-weight: bold;
+  font-family: "century-gothic";
+  src: url("../fonts/cgb.ttf") format("truetype");
+  font-weight: bold;
 }
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-    color:white;
-    text-decoration: none !important;
-    border:0;
-    font-size:100%;
-    font:inherit;
-    vertical-align:baseline;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none !important;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 body {
-    font-family: 'century-gothic', sans-serif;
+  font-family: "century-gothic", sans-serif;
 }
 
 nav {
-    width: 100%;
-    height: 22.5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items:center;
-    background-color: white;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 22.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
 }
-
 nav a {
-    height: 65%; /* Adjust the height as needed */
-  }
-  
-  nav a img {
-    height: 100%;
-    vertical-align: middle;
-  }
+  height: 65%;
+  /* Adjust the height as needed */
+}
+nav a img {
+  height: 100%;
+  vertical-align: middle;
+}
+
 #navs-items {
-    height: 100%;
-    width: auto;
-    float:right;
-    margin:24px 0;
-    padding: 25px;
+  height: 100%;
+  width: auto;
+  float: right;
+  margin: 24px 0;
+  padding: 25px;
 }
-
 #navs-items ul {
-    list-style-type: none;
-    margin-bottom: 30px;
+  list-style-type: none;
+  margin-bottom: 30px;
 }
-
-
 #navs-items ul li {
-    display: inline;
-    font-size: larger;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    line-height: 20px;
+  display: inline;
+  font-size: larger;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
 }
-
 #navs-items ul li a {
-    font-weight: bold;
-    color: var(--txt-clr);
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 20px 20px 26px;
-    transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    -webkit-transition: 0.2s ease;
+  font-weight: bold;
+  color: var(--txt-clr);
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 20px 20px 26px;
+  transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
 }
-
-#navs-items li a{
-	font-family: 'century-gothic', Fallback, sans-serif;
-    font-weight: bold;
-	color: var(--txt-clr);
-	text-transform: uppercase;
-	font-size: 1em;
-	padding:20px 20px 26px;
-	transition: 0.2s ease;
-	-o-transition: 0.2s ease;
-	-webkit-transition: 0.2s ease;
+#navs-items li a {
+  font-family: "century-gothic", Fallback, sans-serif;
+  font-weight: bold;
+  color: var(--txt-clr);
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 20px 20px 26px;
+  transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
 }
-#navs-items li.active > a, #navs-items li > a:hover {
-	color: var(--ylw-clr);
-	border-top:5px solid var(--ylw-clr);
-	background:#202020;
+#navs-items li.active > a {
+  color: var(--ylw-clr);
+  border-top: 5px solid var(--ylw-clr);
+  background: #202020;
 }
-#navs-items li > a:hover:before,#navs-items li.active > a:before {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	border: 10px solid var(--ylw-clr);
-	border-bottom: 0 solid rgba(0, 0, 0, 0)!important;
-	border-right: 10px solid rgba(0, 0, 0, 0)!important;
-	border-left: 10px solid rgba(0, 0, 0, 0)!important;
-	left: 50%;
-	top: -20px;
-	margin-left: -10px;
+#navs-items li.active > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid var(--ylw-clr);
+  border-bottom: 0 solid rgba(0, 0, 0, 0) !important;
+  border-right: 10px solid rgba(0, 0, 0, 0) !important;
+  border-left: 10px solid rgba(0, 0, 0, 0) !important;
+  left: 50%;
+  top: -20px;
+  margin-left: -10px;
 }
-
+#navs-items li > a:hover {
+  color: var(--ylw-clr);
+  border-top: 5px solid var(--ylw-clr);
+  background: #202020;
+}
+#navs-items li > a:hover:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid var(--ylw-clr);
+  border-bottom: 0 solid rgba(0, 0, 0, 0) !important;
+  border-right: 10px solid rgba(0, 0, 0, 0) !important;
+  border-left: 10px solid rgba(0, 0, 0, 0) !important;
+  left: 50%;
+  top: -20px;
+  margin-left: -10px;
+}
 #navs-items ul li:not(:last-child) {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 #bottom-nav {
-    background-color: var(--ylw-clr);
-    height: 60%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.25em;
+  background-color: var(--ylw-clr);
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25em;
 }
 
 :root {
-    --ylw-clr : #fdda01;
-    --txt-clr : #7e7b7c;
-    --txt-clr-sub: #eee;
-    --txt-clr-wht: #fff;
-    --bg-black : #202020;
+  --ylw-clr:#fdda01;
+  --txt-clr:#7e7b7c;
+  --txt-clr-sub:#eee;
+  --txt-clr-wht:#fff;
+  --bg-black:#202020;
 }
 
 .wrap {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 footer {
-    background-color: var(--bg-black);
+  background-color: var(--bg-black);
 }
-
 footer h3 {
-    font-size: 1.3em;
-    color: var(--ylw-clr);
-    border-bottom: 1px dashed rgba(126, 126, 126, 0.34);
-    font-family: 'century-gothic', Fallback, sans-serif;
-    font-weight: bold;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    margin-top: 1em;
+  font-size: 1.3em;
+  color: var(--ylw-clr);
+  border-bottom: 1px dashed rgba(126, 126, 126, 0.34);
+  font-family: "century-gothic", Fallback, sans-serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-top: 1em;
 }
-
 footer li, footer p {
-    font-size: .9em;
-    color: #ccc;
-    display: block;
-    margin: 10px 0;
+  font-size: 0.9em;
+  color: #ccc;
+  display: block;
+  margin: 10px 0;
+}
+footer .copyright {
+  color: var(--txt-clr-wht);
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
-footer .copyright {
-    color: var(--txt-clr-wht);
-    font-size: 13px;
-    text-transform: uppercase;
+#mySidebar, #main {
+  display: none;
 }
+
+@media (max-width: 991.98px) {
+  header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav {
+    height: 15.5vh;
+  }
+  #mySidebar, #main {
+    display: block;
+  }
+  header {
+    height: 75px;
+  }
+  #navs-items {
+    display: none;
+  }
+  #nav-cta-btn {
+    display: none;
+  }
+  .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--bg-black); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    height: auto;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--bg-black);
+    color: var(--txt-clr-sub);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all ease-in 300ms;
+  }
+  .openbtn:hover {
+    background-color: transparent;
+    color: var(--bg-black);
+    border: var(--bg-black) 1px solid;
+    transform: rotate(90deg);
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left 0.5s; /* If you want a transition effect */
+    padding: 5px;
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=global.css.map */
